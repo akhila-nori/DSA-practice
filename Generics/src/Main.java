@@ -2,17 +2,21 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Dog d1 = new Dog("123");
-        Dog d2 = new Dog("456");
+        Dog<Integer,String> d1 = new Dog<>(1,"labrador");
+        Dog<Integer, String> d2 = new Dog<>(2,"german shephard");
+        Dog<Integer,Integer> d3 = new Dog<>(4,5);
 
-      //  Dog d3 = new Dog(12); //I can't have int datatype for Dog class ka field id, because we defined String earlier
-          // To solve this problem we have generics
         }
     }
 
-    class Dog {
-    String id;
-    public Dog(String id){
+    class Dog<E,V>  { //this is how you pass Generics ka 'E' wale type ka data type
+   //Dog class supports 2 types of parametrized datatypes -'E' type datatype and 'V' type datatype
+
+    E id; // E type ka data type
+    V name;  //name is having datatype of type 'V'
+
+    public Dog(E id, V name){
         this.id=id;
+        this.name = name;
     }
     }
