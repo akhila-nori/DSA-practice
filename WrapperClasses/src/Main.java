@@ -4,7 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         //converting primitive datatype (12) to Integer WrapperClass to be used in Collection Framework
-        Integer obj =  Integer.valueOf(12);
+        Integer obj =  Integer.valueOf(12); //returning new Integer
+
+        int age = obj; //unboxing
+
 
 
         }
