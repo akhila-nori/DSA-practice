@@ -6,6 +6,8 @@ public class Main {
         Dog<Integer, String> d2 = new Dog<>(2,"german shephard");
         Dog<Integer,Integer> d3 = new Dog<>(4,5);
 
+        System.out.println(d1.getId());
+
         }
     }
 
@@ -19,4 +21,9 @@ public class Main {
         this.id=id;
         this.name = name;
     }
+
+    E getId(){
+        return id;
+    }
+
     }
