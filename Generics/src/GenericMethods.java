@@ -6,6 +6,10 @@ public class GenericMethods {
 
         GenericMethods obj = new GenericMethods();
         obj.doubeData(456);
+
+        CustomClass custom = new CustomClass();
+        obj.doubeData(custom);
+
     }
 
     //I want to make this method parameterized , I'm passing generics 'E' custom datatype
@@ -19,5 +23,9 @@ public class GenericMethods {
     <E> void doubeData(E data){
         System.out.println(data);
     }
+
+}
+
+class CustomClass {
 
 }
