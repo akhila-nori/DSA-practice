@@ -22,8 +22,14 @@ public class ArrayListClass {
 
         list2.removeAll(list);
 
+        //ARRAYLIST TO BE CONVERTED TO ARRAY OBJECT
+        Object a[] = list.toArray(); //convertes Arraylist (list) ---->  to Array Object 'a'
+        for(Object e :a){
+            Integer temp = (Integer)e;
+            System.out.println(e);
+        }
 
-        System.out.println(list2);
+        System.out.println(a);
 
 
     }
