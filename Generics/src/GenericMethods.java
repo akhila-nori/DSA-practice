@@ -8,7 +8,7 @@ public class GenericMethods {
         obj.doubeData(456);
 
         CustomClass custom = new CustomClass();
-        obj.doubeData(custom);
+//        obj.doubeData(custom);
 
     }
 
@@ -20,7 +20,9 @@ public class GenericMethods {
         System.out.println(data);
     }
 
-    <E> void doubeData(E data){
+    //BOUNDED GENERIC TYPES
+    //this means E extends Number (class in java) , other than that 'E' should not support any other datatype
+    <E extends Number> void doubeData(E data){
         System.out.println(data);
     }
 
