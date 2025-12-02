@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListClass {
@@ -57,7 +58,7 @@ public class ArrayListClass {
 
         //List Iterator
         List<String> fruits = new ArrayList<>();
-        fruits.add("Kiwi");
+        fruits.add("iwi");
         fruits.add("Apple");
         fruits.add("Papaya");
         fruits.add("Mango");
@@ -71,7 +72,7 @@ public class ArrayListClass {
             System.out.println("fruit is "+fruits.get(i) + "\tand index of that fruit is .."+i);
         }
 
-        //Method -1 - for each loop
+        //Method -2 - for each loop
         for(String fruit: fruits){
             System.out.println("for each fruit "+fruit+ " and index of that fruit is ....."+fruit.indexOf(fruit)); // you are calling the indexOf() method on the String object - fruit, not on the List object (fruits)
            // Since you are searching for the entire string within itself (e.g., finding the substring "Kiwi" inside the string "Kiwi"),
@@ -85,8 +86,15 @@ public class ArrayListClass {
             //Example = [Kiwi, Apple, Papaya, Mango].indexOf("Apple") = 1
         }
 
+        //Method-3 --> Using Iterator
 
+        Iterator<String> fi = fruits.iterator();
+        while(fi.hasNext()) {
+            System.out.println("iterator .... "+fi.next());
+        }
 
+       List<String> smallList = fruits.subList(1,2);
+        System.out.println(smallList);
 
     }
 }
