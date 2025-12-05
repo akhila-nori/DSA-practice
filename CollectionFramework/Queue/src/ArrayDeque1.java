@@ -1,13 +1,33 @@
 import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class ArrayDeque1 {
 
     public static void main(String[] args) {
-        ArrayDeque<Integer> dq = new ArrayDeque<>();
-        dq.offer(10);
-        dq.offerLast(20);
-        dq.offerFirst(30);
-        System.out.println(dq);
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+//        dq.offer(10);
+//        dq.offerLast(20);
+//        dq.offerFirst(30);
+//        System.out.println(dq);
+//
+//        dq.pollLast();
+//        System.out.println(dq);
+
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        System.out.println("Stack is ..... "+stack);
+
+        Queue<Integer> queue = new ArrayDeque<>();
+        queue.offer(10);
+        queue.offer(20);
+        queue.offer(30);
+        System.out.println("Queue is ....."+queue);
+
+
+
 
 
     }
