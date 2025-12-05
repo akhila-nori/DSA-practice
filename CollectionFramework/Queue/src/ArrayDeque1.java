@@ -19,12 +19,14 @@ public class ArrayDeque1 {
         stack.push(20);
         stack.push(30);
         System.out.println("Stack is ..... "+stack);
+        System.out.println("peek in stack is ......"+ stack.peek());
 
         Queue<Integer> queue = new ArrayDeque<>();
-        queue.offer(10);
-        queue.offer(20);
-        queue.offer(30);
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
         System.out.println("Queue is ....."+queue);
+        System.out.println("peek in queue is ......"+ queue.peek());
 
 
 
