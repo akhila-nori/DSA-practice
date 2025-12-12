@@ -6,7 +6,7 @@ import java.util.List;
 public class ComaprableAndComparator {
     public static void main(String[] args) {
         Animal a1 = new Animal(4,"leo",10);
-        Animal a2 = new Animal(7,"Bruno",20);
+        Animal a2 = new Animal(4,"Bruno",20);
         Animal a3 = new Animal(3,"Maxo",25);
         Animal a4 = new Animal(9,"Don",5);
 
