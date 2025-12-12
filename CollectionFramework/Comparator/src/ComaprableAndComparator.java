@@ -7,7 +7,7 @@ class MyCustomComparator implements  Comparator<Animal>{
 
     @Override
     public int compare(Animal o1, Animal o2) {
-        return o1.weight - o2.weight;
+        return Integer.compare(o1.weight, o2.weight); //Integer is a wrapper class and wrapper class inside we have compare() method
     }
 }
 
