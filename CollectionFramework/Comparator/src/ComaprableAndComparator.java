@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -17,20 +18,7 @@ public class ComaprableAndComparator {
         dogs.add(a4);
 
 
-        //sorting Method -1 --> List inherits Collection and collection interface provides us the method sort()
-        // Sorts by age in ascending order
-//        dogs.sort((a, b) -> Integer.compare(az, b.getWeight()));
-        dogs.sort(Comparator.naturalOrder());
-//        How it Works Internally:
-//        The dogs.sort() method receives the naturalOrder() comparator.
-//
-//                The naturalOrder() comparator knows that the elements in the list are expected to implement the Comparable interface.
-//
-//        The comparator repeatedly calls the compareTo(Object o) method that you defined inside your Animal class (e.g., comparing ages, names, or weights) to determine the correct sorted position of each element.
-//
-
-       // By using naturalOrder(), you are leveraging the sorting logic you chose for the Animal class (e.g., sorting by age) and applying it to the list without writing a new comparison lambda.
-
+        Collections.sort(dogs);
 
         System.out.println("List .... "+dogs);
         for (Animal d : dogs) {
