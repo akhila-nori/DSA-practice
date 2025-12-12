@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 class MyCustomComparator implements  Comparator<Animal>{
 
@@ -35,5 +32,26 @@ public class ComaprableAndComparator {
             System.out.println(d);
 
         }
+
+        //You need to sort this 2D-array based on first column ke basis pe sort karna hai
+        int a[][] = {
+                {1,2,3},
+                {9,8,7},
+                {4,5,6}};
+
+
+        Arrays.sort(a, (arr1,arr2) ->{
+            return arr1[0] - arr2[0];
+        }
+        );
+
+       for(int e[] : a){
+           for(int element : e){
+               System.out.print(element+"");
+           }
+           System.out.println();
+       }
+
+
     }
 }
