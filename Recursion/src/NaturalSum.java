@@ -10,8 +10,7 @@ public class NaturalSum {
         int a = 0;
         if(n>0){
             sum = sum + n;
-            a= naturalSum(n-1,sum);
-            return a;
+            return naturalSum(n-1,sum);
         }
         return sum;
     }
