@@ -7,10 +7,9 @@ public class NaturalSum {
     }
 
     static int naturalSum(int n) {
-        if(n>1){
+        if(n==1) return 1;
+        else {
             return naturalSum(n-1)+n;
         }
-        if(n==1) return 1;
-        return 0;
     }
 }
