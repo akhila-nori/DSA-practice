@@ -27,4 +27,4 @@ public class JosephusProblem {
 }
    // In this problem, "winner" is the result returned by the recursive function call josephus(n-1, k).
 
-  //If index counting starts at 1 : (josephus(n-1, k) - 1) This takes the 1-based name (like 1, 2, or 3) and subtracts 1 to turn it into a 0-based index (like 0, 1, or 2). Now the computer can handle it.
+  //If index counting starts at 1 : (josephus(n-1, k) k  - 1) This takes the 1-based name (like 1, 2, or 3) and subtracts 1 to turn it into a 0-based index (like 0, 1, or 2). Now the computer can handle it.
